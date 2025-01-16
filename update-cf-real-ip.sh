@@ -26,7 +26,7 @@ echo "" > $CONFIG_FILE # Clear the file
 
     # Set the real IP header, typically Cloudflare uses CF-Connecting-IP
     echo "real_ip_header CF-Connecting-IP;"
-} >> $CONFIG_MAP_FILE
+} >> $CONFIG_FILE
 
 # Test Nginx configuration
 nginx -t
